@@ -9,7 +9,7 @@ TEXT="
 <code>────────────────────</code>
 <b>⚠️ NOTIFICATIONS MULTI LOGIN ⚠️</b>
 <code>────────────────────</code>
-<code>Username  : </code><code>$user</code>
+<code>Username    : </code><code>$user</code>
 <code>Limit Ip    : </code><code>$data</code>
 <code>────────────────────</code>
 "
