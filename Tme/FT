@@ -386,7 +386,6 @@ function Menu_Features() {
   echo -e "\e[93;1m │${GR}[03]•\e[97;1m AUTOREBOOT VPS  "
   echo -e "\e[93;1m │${GR}[04]•\e[97;1m MONITOR VPS INF  "
   echo -e "\e[93;1m │${GR}[05]•\e[97;1m SPEEDTEST VPS  "
-  echo -e "\e[93;1m │${GR}[06]•\e[97;1m DELETE AKUN XP   "
   echo -e "\e[93;1m │${GR}[07]•\e[97;1m CHANGE BANNER   "
   echo -e "\e[93;1m │${GR}[08]•\e[97;1m CHANGE DOMAIN  "
   echo -e "\e[93;1m │${GR}[09]•\e[97;1m FIXX HAPROXY  "
