@@ -390,20 +390,19 @@ function Menu_Features() {
   echo -e "\e[93;1m │${GR}[08]•\e[97;1m CHANGE DOMAIN  "
   echo -e "\e[93;1m │${GR}[09]•\e[97;1m FIXX HAPROXY  "
   echo -e "\e[93;1m │${GR}[10]•\e[97;1m FIXX NGINX  "
-  echo -e "\e[93;1m │${GR}[11]•\e[97;1m AUTO POINTING  "
-  echo -e "\e[93;1m │${GR}[12]•\e[97;1m INSTAL FIX UDP   "
-  echo -e "\e[93;1m │${GR}[13]•\e[97;1m BACKUP BOT VIA    "
-  echo -e "\e[93;1m │${GR}[14]•\e[97;1m CLEAR ALL CACHE  "
-  echo -e "\e[93;1m │${GR}[15]•\e[97;1m CLEAR ALL LOGS  "
-  echo -e "\e[93;1m │${GR}[16]•\e[97;1m CLEAR LOGS FILE  "
-  echo -e "\e[93;1m │${GR}[17]•\e[97;1m CHECK BANDWIDTH   "
-  echo -e "\e[93;1m │${GR}[18]•\e[97;1m SCRIPT INFORMATION    "
-  echo -e "\e[93;1m │${GR}[19]•\e[97;1m GANTI TAMPILAN MENU  "
-  echo -e "\e[93;1m │${GR}[20]•\e[97;1m ABOUT  "
+  echo -e "\e[93;1m │${GR}[11]•\e[97;1m AUTO POINTING  " 
+  echo -e "\e[93;1m │${GR}[12]•\e[97;1m PORT INFO    "
+  echo -e "\e[93;1m │${GR}[13]•\e[97;1m CLEAR ALL CACHE  "
+  echo -e "\e[93;1m │${GR}[14]•\e[97;1m CLEAR ALL LOGS  "
+  echo -e "\e[93;1m │${GR}[15]•\e[97;1m CLEAR LOGS FILE  "
+  echo -e "\e[93;1m │${GR}[16]•\e[97;1m CHECK BANDWIDTH   "
+  echo -e "\e[93;1m │${GR}[17]•\e[97;1m SCRIPT INFORMATION    "
+  echo -e "\e[93;1m │${GR}[18]•\e[97;1m GANTI TAMPILAN MENU  "
+  echo -e "\e[93;1m │${GR}[19]•\e[97;1m ABOUT  "
   echo -e "\e[93;1m │${BK}[xx]•\e[0;31m EXIT ${Xark}    "
   BR2
   echo -e ""
-read -p "  Just Input 1-20 or xx :  " Ltt
+read -p "  Just Input 1-19 or xx :  " Ltt
 case $Ltt in
 1) clear ; run ;;
 2) clear ; reset ;;
@@ -416,15 +415,14 @@ case $Ltt in
 9) clear ; fixhap ;;
 10) clear ; fixcert ;;
 11) clear ; cf ;;
-12) clear ; UDEPE ;;
-13) clear ; m-bkp ;;
-14) clear ; clearcache ;;
-15) clear ; clearlog ;;
-16) clear ; delet-cache-file ;;
-17) clear ; vnstat ;;
-18) clear ; neo ;;
-19) clear ; m-tme ;;
-20) clear ; Sc_About ;;
+12) clear ; prot ;;
+13) clear ; clearcache ;;
+14) clear ; clearlog ;;
+15) clear ; delet-cache-file ;;
+16) clear ; vnstat ;;
+17) clear ; neo ;;
+18) clear ; m-tme ;;
+19) clear ; Sc_About ;;
 *) menu ;;
 esac
 }
@@ -478,7 +476,7 @@ echo -e "  \e[93;1m┌───────────────────�
 echo -e "  \e[93;1m│${Suffix} SSH-WS :${Suffix} $status_ssh \e[93;1m│${Suffix} XRAY :${Suffix} $status_xray \e[93;1m│${Suffix} NGINX :${Suffix} $status_nginx \e[93;1m│${Suffix}"
 echo -e "  \e[93;1m└──────────────────────────────────────┘${Suffix}"
 echo -e "     \e[93;1m┌────────────────────────────────┐${Suffix}"
-echo -e "     \e[93;1m│${Suffix} \e[92;1mID :${Suffix}${Blu_Cy} $(cat /usr/bin/user)${Suffix}"
+echo -e "     \e[93;1m│${Suffix} \e[92;1mID :${Suffix}${Blu_Cy} ${username} ${Suffix}"
 echo -e "     \e[93;1m│${Suffix} \e[92;1mExp.sc :${Suffix} ${Blu_Cy}$(((d1 - d2) / 86400)) Day.Turn${Suffix}"
 echo -e "     \e[93;1m└────────────────────────────────┘${Suffix}"
 }
